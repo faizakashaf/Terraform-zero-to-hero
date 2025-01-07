@@ -19,7 +19,7 @@ resource "aws_instance" "ec2_instance" {
   
 }
 
-resource "aws_s3_bucket" "s3_bucket" {
+resource "aws_s3_object" "s3_bucket" {
   bucket = var.bucket
   provider = aws.s3
   tags = {
